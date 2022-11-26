@@ -86,7 +86,6 @@ a {
 .close-svg {
     width: 18px;
     height: 18px;
-    background: transparent;
     background-color: var(--white);
 }
 
@@ -96,17 +95,21 @@ a {
     height: 30px;
     top: 8px;
     right: 8px;
-    border: 0;
+    border: 1px solid rgba(31, 25, 25, 0.1);
+    border-radius: 50%;
+    background: transparent;
     
 }
 
-.backdrop {
+.backdrop.is-hidden {
 position: fixed;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgba(0, 0, 0, 0.2);;
+background-color: rgba(0, 0, 0, 0.2);
+opacity: 0;
+pointer-events: none;
 }
 
 .modal {
