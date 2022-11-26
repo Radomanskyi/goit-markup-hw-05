@@ -84,13 +84,16 @@ a {
 }
 
 .close-svg {
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
+    background: transparent;
     background-color: var(--white);
 }
 
 .close-button {
     position: absolute;
+    width: 30px;
+    height: 30px;
     top: 8px;
     right: 8px;
     border: 0;
